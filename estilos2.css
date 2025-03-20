@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(fondito.jpg); /* Fondo principal */
+    color: #333;
+}
+
+.container {
+    max-width: 300px; /* Reducción del tamaño máximo del contenedor */
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de detalles del producto */
+.product-detail {
+    padding: 2rem 0;
+}
+
+.product-detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-detail-image img {
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-detail-info {
+    text-align: center;
+}
+
+.product-detail-info p {
+    margin: 0.5rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries para Responsividad */
+@media (min-width: 300px) {
+    .container {
+        max-width: 70%;
+    }
+    
+    .product-detail-container {
+        flex-direction: row;
+    }
+
+    .product-detail-image {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .product-detail-image img {
+        max-width: 100%;
+    }
+
+    .product-detail-info {
+        text-align: left;
+    }
+}

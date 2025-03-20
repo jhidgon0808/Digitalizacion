@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondito.jpg); /* Fondo principal */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para el contenido */
+    border-radius: 5px;
+}
+
+/* Sección principal */
+header {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url('fondo2.jpg') no-repeat center center/cover; /* Fondo para la sección de bienvenida */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro transparente para el texto */
+    display: inline-block; /* Asegura que el fondo se ajuste solo al texto */
+    padding: 0.5rem; /* Ajusta el relleno para mayor separación */
+    border-radius: 5px; /* Añade bordes redondeados */
+    color: #fff;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro transparente para el texto */
+    display: inline-block; /* Asegura que el fondo se ajuste solo al texto */
+    padding: 0.5rem; /* Ajusta el relleno para mayor separación */
+    border-radius: 5px; /* Añade bordes redondeados */
+    color: #fff;
+}
+
+/* Sección de productos destacados */
+section {
+    padding: 2rem 0;
+    background: url('ruta_a_tu_imagen_de_fondo.jpg') no-repeat center center fixed; /* Fondo para la sección de productos */
+    background-size: cover;
+    border-radius: 5px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #000000; /* Color del texto en la sección de productos */
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para los productos */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-image {
+    margin-left: 1rem;
+}
+
+.product-image img {
+    max-width: 150px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries para Responsividad */
+@media (min-width: 600px) {
+    .product {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .product-image {
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .product-image img {
+        max-width: 150px;
+    }
+}
